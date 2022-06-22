@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root{
+    --fontName: 'Pacifico', cursive;
+    --fontButton: 'Acme', sans-serif;
+    --fontDefault: 'Courgette', cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    background: #16161a;
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.content-area{
+    width: 90%;
+    min-height: 90vh;
+    background: #94a1b2;;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    gap: 20px;
+}
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+
+.write-area{
+    letter-spacing: 2px;
+    font-family: var(--fontName);
+    color: #6549b8;
+}
+
+hr{
+    border: 1px solid #72757e;
+}
+.profile{
+    height: 200px;
+    width: 200px;
+    background: url("../_images/yrllan.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid #7452da;
+}
+
+.btn-default{
+    color: #fffffe;
+    background: #7f5af0;
+    border-radius: 5px;
+    width: 80%;
+    height: 10vw;
+    max-height: 100px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fontButton);
+    font-weight: 300;
+    letter-spacing: 1px;
+    
+}
+.btn-default:hover{
+    background: #7452da;
+    color:#010101;
+ 
+}
+section{
+    
+    color: #fffffe;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+section > h1,h2 {
+    color: #fffffe;
+    font-family: var(--fontButton);
+    text-shadow: 0 1px 1px #010101;
+    font-size: clamp(.1em, 1.3em, 1.6em);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+ h3,h4 {
+    color: #fffffe;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 .5px .5px #72757e;
+    font-size: clamp(.1em, 1.3em, 1.6em);
+    letter-spacing: 1px;
+    
+}
+ p{
+    font-family: var(--fontDefault);
+    letter-spacing: 1px;
+    color: #010101;
+    text-align: center;
+    font-size: clamp(.9em, 1em, 1.6em);
+}
+
+.project-area{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: 2px solid #72757e;
+    gap: 40px;
+}
+.project-area-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: 2px solid #72757e;
+    gap: 40px;
+}
+.area-thumb{
+    width: 100%;
+    
+}
+.project-description{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.area-technologies{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.technologies{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    padding:10px;
+}
+.technology{
+    font-size: 1em;
+
+}
+.icon{
+    width: 10vw;
+    height: 10vw;
+}
+.round{
+    border-radius: 5px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.social-media{
+    display: flex;
+}
+a{
+    color: #72757e;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.social-link{
+    color: #7452da;
+    text-decoration: none;
+}
+@media (min-width: 720px)
+{
+    .btn-default{
+        width: 300px;
+        height: 60px;
+    }
+    .project-area{
+        flex-direction: row;
+    }
+    .project-area-2{
+        flex-direction: row-reverse;
+    }
+   
+    .area-thumb{
+        width: 50%;
+        
+    }
+
+    .icon{
+        width: 3vw;
+    }
+}
