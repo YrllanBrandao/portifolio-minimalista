@@ -41,10 +41,15 @@ header{
     padding: 1em;
     gap: 20px;
 }
+
+
 .img-fluid{
     width: 100%;
     height: auto;
+    object-fit: cover;
+    object-position:unset;
 }
+
 
 .write-area{
     letter-spacing: 2px;
@@ -191,7 +196,7 @@ a{
     color: #7452da;
     text-decoration: none;
 }
-@media (min-width: 720px)
+@media (min-width: 1280px)
 {
     .btn-default{
         width: 300px;
@@ -208,7 +213,10 @@ a{
         width: 50%;
         
     }
-
+    .img-fluid{
+        width: 500px;
+        height: 500px;
+    }
     .icon{
         width: 3vw;
     }
